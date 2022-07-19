@@ -289,11 +289,11 @@ fieldset{
 .fieldset__ratio:checked + .fieldset__ratio_style{
   border-color: var(--active-item);
   border-width: 4px;
+  box-shadow: none!important;
 }
 
 .fieldset__ratio:focus + .fieldset__ratio_style{
-  outline: auto;
-  outline-color: black;
+  box-shadow: 0 0 0 2px rgb(36, 36, 36);
 }
 
 
@@ -339,8 +339,7 @@ fieldset{
 
 
 .agree__checkbox:focus + .agree__checkbox_style{
- outline: auto;
- outline-color: black;
+  box-shadow: 0 0 0 2px rgb(36, 36, 36);
 }
 
 .agree__checkbox:checked + .agree__checkbox_style{
@@ -349,7 +348,9 @@ fieldset{
   border-color: var(--active-item);
   box-shadow: none!important;
 }
-
+.agree__checkbox:visited + .agree__checkbox_style{
+  box-shadow: none!important;
+}
 
 
 .agree__checkbox{
@@ -358,21 +359,18 @@ fieldset{
 
 
 
-.submit-button{
+.form__button{
   margin-top: 30px;
   background-color: var(--active-item);
-  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 50px;
   color: var(--secondary);
+  border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.submit-button__text{
-  display: inline-block;
-  padding: 8px 50px;
-  font-size: 12px;
-  font-weight: 500;
-}
 
 @media screen and (max-width: 960px)  {
   .scene{
