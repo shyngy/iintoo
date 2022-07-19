@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iintoo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="registration">
+        <section class="scene">
+          <img class="scene__logo" src="./img/logo.svg" alt="" />
+          <img class="scene__picture" src="./img/bg.jpg" alt="" />
+        </section>
+        <div class="child-center">
+          <section class="auth-section">
+            <div class="info">
+              <h1 class="info__title title">Get iintoo it today</h1>
+              <p class="info__subtitle subtitle">
+                There is no charge or obligation upon registration.
+              </p>
+            </div>
+            <section class="register between">
+              <a class="link" href="https://www.facebook.com/" target="_blank">
+                <div class="register__box facebook">
+                  <img class="register__img" src="./img/facebook.svg" alt="" />
+                  <span class="register__text">Register with Facebook</span>
+                </div>
+              </a>
+              <a
+                class="link"
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+              >
+                <div class="register__box linkedin">
+                  <img class="register__img" src="./img/linkedin.svg" alt="" />
+                  <span class="register__text">Register with Linkedin</span>
+                </div>
+              </a>
+            </section>
+            <div class="separator">
+              <span class="separator__text">or</span>
+            </div>
+            <form class="form" action="" method="post">
+              <section class="between">
+                <div class="user-info">
+                  <label class="user-info__label" for="email">Email</label>
+                  <input
+                    class="user-info__input"
+                    aria-expanded="true"
+                    id="email"
+                    type="text"
+                  />
+                </div>
+                <div class="user-info">
+                  <label class="user-info__label" for="phone">Phone</label>
+                  <input
+                    aria-expanded="true"
+                    class="user-info__input"
+                    id="phone"
+                    type="text"
+                  />
+                </div>
+              </section>
+              <fieldset class="fieldset">
+                <h2 class="fieldset__title title">
+                  What type of investor are you?
+                </h2>
+                <div class="fieldset__subtitle subtitle">
+                  Select the type of investor are you below
+                </div>
+
+                <ul class="fieldset__list">
+                  <li class="fieldset__item">
+                    <label class="fieldset__label">
+                      <input
+                        class="fieldset__ratio hidden-input"
+                        type="radio"
+                        name="type_investor"
+                      />
+                      <span class="fieldset__ratio_style"></span>
+                      Individual
+                    </label>
+                    <button class="fieldset__btn" type="button">
+                      <img src="./img/info.svg" alt="" />
+                    </button>
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label">
+                      <input
+                        class="fieldset__ratio hidden-input"
+                        type="radio"
+                        name="type_investor"
+                      />
+                      <span class="fieldset__ratio_style"></span>
+                      Business
+                    </label>
+                    <button class="fieldset__btn" type="button">
+                      <img src="./img/info.svg" alt="" />
+                    </button>
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label">
+                      <input
+                        class="fieldset__ratio hidden-input"
+                        type="radio"
+                        name="type_investor"
+                      />
+                      <span class="fieldset__ratio_style"></span>
+                      IRA
+                    </label>
+                    <button class="fieldset__btn" type="button">
+                      <img src="./img/info.svg" alt="" />
+                    </button>
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label">
+                      <input
+                        class="fieldset__ratio hidden-input"
+                        type="radio"
+                        name="type_investor"
+                      />
+                      <span class="fieldset__ratio_style"></span>
+                      Trust
+                    </label>
+                    <button class="fieldset__btn" type="button">
+                      <img src="./img/info.svg" alt="" />
+                    </button>
+                  </li>
+                </ul>
+                <div class="fieldset__description">
+                  I am a natural person investing on my own behalf as a sole
+                  owner, joint tenant, or tenant in common.
+                </div>
+                <div class="agree" for="agree">
+                  <label class="agree__label" for="agree">
+                    <input
+                      checked
+                      class="agree__checkbox hidden-input"
+                      type="checkbox"
+                      id="agree"
+                    />
+                    <span class="agree__checkbox_style"></span>
+                  </label>
+                  <span class="agree__text"
+                    >I agree to the terms and receiving notifications from
+                    iintoo
+                    <a class="agree__link" href="goggle.com">
+                      View full terms
+                    </a></span
+                  >
+                </div>
+              </fieldset>
+              <button class="submit-button" type="button">
+                <span class="submit-button__text"> Create Account </span>
+              </button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
